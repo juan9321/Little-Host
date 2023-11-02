@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Nov-2023 às 20:38
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.0.13
+-- Tempo de geração: 02-Nov-2023 às 18:16
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `littlehost`
 --
-CREATE DATABASE IF NOT EXISTS `littlehost` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `littlehost`;
 
 -- --------------------------------------------------------
 
@@ -76,8 +74,7 @@ CREATE TABLE `anfitriao` (
 --
 
 INSERT INTO `anfitriao` (`cod`, `nome`, `telefone`, `endereco`, `cidade`, `bairro`, `num_casa`, `complemento`, `cep`, `cpf`, `genero`, `dt_nasc`, `email`, `senha`, `imagem_perfil`, `imagem_local`, `valor_hora`, `preferencias`, `img`) VALUES
-(1, 'Victor Cardoso', 11959955896, 'Rua Um', 'São Paulo', 'Bairro Um', '69', 'Casa 5', 8485200, 12312312356, 'Masculino', '0000-00-00', 'victor@gmail.com', '12345678', 'img/imagem1.png', '', 14.99, '', ''),
-(2, 'Victor Cardoso', 11959955896, 'Rua Um', 'São Paulo', 'Bairro Um', '69', 'Casa 5', 8485200, 12312312356, 'Masculino', '2005-12-19', 'victor@gmail.com', '12345678', 'img/imagem1.png', '', 14.99, '', '');
+(3, 'joao pedro', 123123, 'dawd', 'dawda', 'dawdaw', '1323', 'dawdaw', 2132, 123123, 'Feminino', '2023-11-09', 'dawd@gasda', '123123', '', '', 23.23, 'nenhuma', '');
 
 -- --------------------------------------------------------
 
@@ -116,6 +113,14 @@ CREATE TABLE `hospedagem` (
   `data_busca` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Extraindo dados da tabela `hospedagem`
+--
+
+INSERT INTO `hospedagem` (`cod`, `cod_tutor`, `cod_anfitriao`, `data_hosp`, `data_busca`) VALUES
+(9, 10, 3, '2023-12-01 23:54:00', '2023-12-06 23:54:00'),
+(10, 10, 3, '2023-11-01 23:54:00', '2023-12-06 23:54:00');
+
 -- --------------------------------------------------------
 
 --
@@ -136,7 +141,7 @@ CREATE TABLE `tutor` (
 --
 
 INSERT INTO `tutor` (`cod`, `nome`, `email`, `senha`, `imagem_perfil`, `imagem_animal`) VALUES
-(9, 'Victor', 'vek@gmail.com', '123123', 'img/imagem3.png', '');
+(10, 'juan', 'juan@gmail.com', '123123', '', '');
 
 --
 -- Índices para tabelas despejadas
@@ -189,25 +194,25 @@ ALTER TABLE `administrador`
 -- AUTO_INCREMENT de tabela `anfitriao`
 --
 ALTER TABLE `anfitriao`
-  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `ficha_animal`
 --
 ALTER TABLE `ficha_animal`
-  MODIFY `cod_animal` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cod_animal` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `hospedagem`
 --
 ALTER TABLE `hospedagem`
-  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `tutor`
 --
 ALTER TABLE `tutor`
-  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cod` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restrições para despejos de tabelas
