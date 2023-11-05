@@ -72,8 +72,8 @@ CREATE TABLE `anfitriao` (
 --
 
 INSERT INTO `anfitriao` (`cod`, `nome`, `telefone`, `endereco`, `cidade`, `bairro`, `num_casa`, `complemento`, `cep`, `cpf`, `genero`, `dt_nasc`, `email`, `senha`, `imagem_perfil`, `valor_hora`, `preferencias`) VALUES
-(3, 'joao pedro', 123123, 'dawd', 'dawda', 'dawdaw', '1323', 'eae', 2132, 123123, 'Feminino', '2023-11-09', 'dawd@gasda', '123123', '../Controllers/arquivos/3.png', 23.23, 'nenhuma ainda.'),
-(4, 'Ana', 11959955896, 'Rua Dois', 'São Paulo', 'Bairro Dois', '12', 'Casa 3', 8485201, 12312312357, 'Feminino', '1990-01-15', 'ana@gmail.com', 'senha123', '../Controllers/arquivos/4.png', 15.99, 'todas possiveis'),
+(3, 'joao pedro', 123123, 'dawd', 'dawda', 'dawdaw', '1323', 'eae', 2132, 123123, 'Feminino', '2023-11-09', 'dawd@gasda', '123123', '', 23.23, 'nenhuma ainda.'),
+(4, 'Ana', 11959955896, 'Rua Dois', 'São Paulo', 'Bairro Dois', '12', 'Casa 3', 8485201, 12312312357, 'Feminino', '1990-01-15', 'ana@gmail.com', 'senha123', '', 15.99, 'todas possiveis'),
 (5, 'Pedro', 11959955897, 'Rua Três', 'São Paulo', 'Bairro Três', '24', 'Apartamento 2', 8485202, 12312312358, 'Masculino', '1985-05-20', 'pedro@gmail.com', 'senha456', 'img/anfitriao2.jpg', 12.49, ''),
 (6, 'Mariana', 11959955898, 'Rua Quatro', 'São Paulo', 'Bairro Quatro', '36', 'Casa 7', 8485203, 12312312359, 'Feminino', '1988-10-10', 'mariana@gmail.com', 'senha789', 'img/anfitriao3.jpg', 16.75, ''),
 (7, 'João', 11959955899, 'Rua Cinco', 'São Paulo', 'Bairro Cinco', '48', 'Apartamento 1', 8485204, 12312312360, 'Masculino', '1992-03-25', 'joao@gmail.com', 'senha321', 'img/anfitriao4.jpg', 14, ''),
@@ -110,10 +110,10 @@ CREATE TABLE `ficha_animal` (
 --
 
 INSERT INTO `ficha_animal` (`cod_animal`, `cod_tutor`, `nome`, `especie`, `raca`, `sexo`, `idade`, `peso`, `tamanho`, `caracteristicas`, `comportamento`, `historico_medico`, `instrucoes_especiais`, `img`) VALUES
-(9, 10, 'Fonseca', 'Cachorro', 'Vira Lata', 'Macho', 14, '7.00', '1.00', 'ele é meio cego', 'carente', 'nenhum', 'dar afeto', '../Controllers/arquivos/9.png'),
-(10, 11, 'daw', 'Cachorro', 'awd', 'Macho', 0, '0.00', '0.00', 'awd', 'adw', 'awd', 'awd', '../Controllers/arquivos/10.png'),
-(11, 12, 'adwaw', 'Cachorro', 'awd', 'Macho', 0, '0.00', '0.00', 'awd', 'daw', 'awd', 'daw', '../Controllers/arquivos/11.png'),
-(13, 13, 'carlos', 'Gato', 'sphyxn', 'Macho', 15, '69.00', '1.79', 'lindo', 'espirra', 'dor de cabeca', 'auuuu', '../Controllers/arquivos/13.png');
+(9, 10, 'Fonseca', 'Cachorro', 'Vira Lata', 'Macho', 14, '7.00', '1.00', 'ele é meio cego', 'carente', 'nenhum', 'dar afeto', ''),
+(10, 11, 'Princesa', 'Cachorro', 'awd', 'Macho', 0, '0.00', '0.00', 'awd', 'adw', 'awd', 'awd', ''),
+(11, 12, 'Demolidor', 'Cachorro', 'awd', 'Macho', 0, '0.00', '0.00', 'awd', 'daw', 'awd', 'daw', ''),
+(13, 13, 'Thor', 'Gato', 'sphyxn', 'Macho', 15, '69.00', '1.79', 'lindo', 'espirra', 'dor de cabeca', 'auuuu', '');
 
 -- --------------------------------------------------------
 
@@ -158,7 +158,7 @@ INSERT INTO `tutor` (`cod`, `nome`, `email`, `senha`) VALUES
 (10, 'juan ', 'juan@gmail.com', '123123'),
 (11, 'Fernanda', 'Fernanda@gmail', '123123'),
 (12, 'Benedito', 'Benedito@gmail.com', '123123'),
-(13, 'ola', 'auau@gmail.com', 'auau');
+(13, 'Alfa', 'Alfredo@gmail.com', '123123');
 
 --
 -- Índices para tabelas despejadas
